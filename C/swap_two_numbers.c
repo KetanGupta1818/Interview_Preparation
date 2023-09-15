@@ -1,6 +1,6 @@
 #include <stdio.h>
 void swap_ref(int* a, int* b){
-    int temp = *a;
+    int temp = *a;    //value at a
     *a = *b;
     *b = temp;
 }
@@ -8,5 +8,4 @@ int main(){
     int A = 10, B = 100;
     swap_ref(&A,&B);
     printf("A= %d, B=%d\n",A,B);
-    
 }
